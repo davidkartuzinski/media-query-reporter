@@ -15,7 +15,7 @@ You install and activate the plugin like any other plugin.  Only use in your dev
 
 ## If you have additional ideas for this plugin, please make a pull request.  
 
-If you would like to contribute to this plugin then please fork it and send a pull request. I'll merge the request if it fits into the goals for the template and credit you in the [changelog](https://github.com/davidkartuzinski/media-query-reporter/master/changelog.txt).
+If you would like to contribute to this plugin then please fork it and send a pull request. I'll merge the request if it fits into the goals for the template and credit you in the [changelog](https://github.com/davidkartuzinski/media-query-reporter/blob/master/media-query-reporter/changelog.txt).
 
 ## This plugin is a simple combination and modification to the work of:
 
