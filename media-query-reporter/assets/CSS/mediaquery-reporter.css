@@ -69,3 +69,6 @@ p#viewportInfo {
 		background-color: hsla(360,60%,40%,0.7);
 	}
 }
+
+.techButton {width: 18px; height: 20px; padding:0 .50rem; margin-left: 2rem; }
+#techInfo {font-size: 12px; display: none; padding-bottom: .5rem;}

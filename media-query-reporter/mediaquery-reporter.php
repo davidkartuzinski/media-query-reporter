@@ -30,19 +30,31 @@ function media_query_reporter_head_js(){ ?>
 
     <script type="text/javascript">
             <!--
+            var techInfo;
+            techInfo = navigator.userAgent;
             var viewportwidth;var viewportheight;if(typeof window.innerWidth!='undefined')
             {viewportwidth=window.innerWidth,viewportheight=window.innerHeight}
             else if(typeof document.documentElement!='undefined'&&typeof document.documentElement.clientWidth!='undefined'&&document.documentElement.clientWidth!=0)
             {viewportwidth=document.documentElement.clientWidth,viewportheight=document.documentElement.clientHeight}
             else
             {viewportwidth=document.getElementsByTagName('body')[0].clientWidth,viewportheight=document.getElementsByTagName('body')[0].clientHeight}
-            document.write('<p id="viewportInfo">Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');jQuery(window).resize(function(){var viewportwidth;var viewportheight;if(typeof window.innerWidth!='undefined')
+            document.write('<p id="viewportInfo">Viewport width is '+viewportwidth+' x '+viewportheight+'<button class="techButton" onclick="infoClick()">I</button><span id="techInfo"><br>'+techInfo+'</span>'+'</p>');jQuery(window).resize(function(){var viewportwidth;var viewportheight;if(typeof window.innerWidth!='undefined')
             {viewportwidth=window.innerWidth,viewportheight=window.innerHeight}
             else if(typeof document.documentElement!='undefined'&&typeof document.documentElement.clientWidth!='undefined'&&document.documentElement.clientWidth!=0)
             {viewportwidth=document.documentElement.clientWidth,viewportheight=document.documentElement.clientHeight}
             else
             {viewportwidth=document.getElementsByTagName('body')[0].clientWidth,viewportheight=document.getElementsByTagName('body')[0].clientHeight}
             jQuery("#viewportInfo").html('Viewport: '+viewportwidth+' x '+viewportheight);});
+
+            function infoClick() {
+            var x = document.getElementById("techInfo");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+}
+
     </script>
     
     <?php } 
